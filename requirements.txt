@@ -1,4 +1,3 @@
-random
 requests
 flask
 flask_mongoalchemy
