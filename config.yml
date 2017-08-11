@@ -1,0 +1,5 @@
+db-params:
+    MONGODB_URI: ''
+    MONGODB_USER: ''
+    MONGODB_PASS: ''
+    MONGODB_DB: ''
