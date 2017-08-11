@@ -1,0 +1,7 @@
+yaml
+random
+requests
+flask
+flask_mongoalchemy
+faker
+Bottle
