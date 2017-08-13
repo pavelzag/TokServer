@@ -21,4 +21,4 @@ def post_request():
     query(tok_tag, tok_location, tok_file)
 
 if __name__ == "__main__":
-    run(debug=True, host='0.0.0.0', port=443, reloadable=True)
+    run(debug=True, host='0.0.0.0', port=8080, reloadable=True)
