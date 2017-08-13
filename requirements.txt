@@ -2,6 +2,7 @@ Bottle
 flask
 faker
 gunicorn
+manage
 pytz
 requirements
 pyyaml
