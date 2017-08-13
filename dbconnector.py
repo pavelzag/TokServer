@@ -8,6 +8,9 @@ mongodb_uri = get_config(parameter_type='db-params', parameter_name='MONGODB_URI
 mongodb_user = get_config(parameter_type='db-params', parameter_name='MONGODB_USER')
 mongodb_pass = get_config(parameter_type='db-params', parameter_name='MONGODB_PASS')
 mongodb_connection_string = 'mongodb://' + mongodb_user + ':' + mongodb_pass + '@' + mongodb_uri + '/' + mongodb_db
+print('This is the db: ' + mongodb_db + ' This is the uri: '
+      + mongodb_uri + ' This is the user: ' + mongodb_user + ' This is the password: ' + mongodb_pass)
+
 app.config['MONGOALCHEMY_DATABASE'] = mongodb_db
 app.config['MONGOALCHEMY_CONNECTION_STRING'] = mongodb_connection_string
 db = MongoAlchemy(app)
