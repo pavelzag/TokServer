@@ -5,9 +5,6 @@ ADD dbconnector.py /
 ADD config.yml /
 ADD query_builder.py /
 ADD tags_generator.py
-RUN pip install yaml
-RUN pip install random
-RUN pip install requests
 RUN pip install flask
 RUN pip install flask_mongoalchemy
 RUN pip install faker
