@@ -1,6 +1,5 @@
 Bottle
 flask
-flask_mongoalchemy
 faker
 pytz
 requirements
