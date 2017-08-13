@@ -1,11 +1,16 @@
 from datetime import datetime
 import uuid
-from bottle import Bottle, request, run, post
+from bottle import Bottle, request, run, post, get
 from query_builder import query
 
 app = Bottle()
 date = datetime.now()
 tok_id = str(uuid.uuid4())
+
+
+@get('/')
+def index():
+    return 'Hi there'
 
 
 @post('/post_request')
