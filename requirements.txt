@@ -4,3 +4,4 @@ flask_mongoalchemy
 faker
 pytz
 requirements
+yaml
