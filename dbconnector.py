@@ -27,3 +27,7 @@ class Connector(db.Document):
     tok_location = db.StringField()
     tok_date = db.DateTimeField()
     tok_file = db.StringField()
+
+
+class RandomTok(db.Document):
+    pass
