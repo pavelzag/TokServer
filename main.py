@@ -9,7 +9,7 @@ date = datetime.now()
 tok_id = str(uuid.uuid4())
 
 
-@get('/hi')
+@get('/')
 def index():
     return 'Hi there'
 
