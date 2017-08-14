@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 import uuid
 from bottle import Bottle, request, run, post, get
 from query_builder import query
@@ -21,4 +22,5 @@ def post_request():
     query(tok_tag, tok_location, tok_file)
 
 if __name__ == "__main__":
-    run(debug=True, host='0.0.0.0', port=8080, reloadable=True)
+    port = int(os.environ.get('PORT', 5000))
+    run(debug=True, host='0.0.0.0', port=port, reloadable=True)
