@@ -17,7 +17,7 @@ mongodb_connection_string = 'mongodb://' + mongodb_user + ':' + mongodb_pass + '
 logging.debug('This is the db: ' + mongodb_db + ' This is the uri: '
       + mongodb_uri + ' This is the user: ' + mongodb_user + ' This is the password: ' + mongodb_pass)
 
-connect('experiments', host=mongodb_uri)
+connect('experiments', host=mongodb_uri, username=mongodb_user, password=mongodb_pass)
 
 
 class Tok(Document):
