@@ -15,7 +15,7 @@ def post_request():
     tok_location = request.params.get('tok_location')
     tok_file = request.params.get('tok_file')
     save_query(tok_tag, tok_location, tok_file)
-    return 'Hi there'
+    return 'Tok received successfully'
 
 
 @get('/get_random')

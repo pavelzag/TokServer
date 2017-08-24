@@ -2,16 +2,19 @@ from dbconnector import Tok
 from random import randrange
 from datetime import datetime
 import uuid
-
+import exceptions
 
 date = datetime.now()
 tok_id = str(uuid.uuid4())
 
 
 def save_query(tok_tag, tok_location, tok_file):
-    Tok_Obj = Tok(tok_date=date, tok_id=tok_id, tok_tag=tok_tag, tok_location=tok_location,
+    tok_obj = Tok(tok_date=date, tok_id=tok_id, tok_tag=tok_tag, tok_location=tok_location,
                     tok_file=tok_file)
-    Tok_Obj.save()
+    try:
+        tok_obj.save()
+    except:
+        raise exceptions.SaveToDBException
 
 
 def tok_counter():
